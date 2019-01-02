@@ -1,0 +1,37 @@
+{
+  "name": "empty-project-template",
+  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject",
+    "test": "jest"
+  },
+  "dependencies": {
+    "expo": "^31.0.2",
+    "react": "16.5.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz"
+  },
+  "devDependencies": {
+    "babel-jest": "^23.6.0",
+    "babel-preset-expo": "^5.0.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "jest": "^23.6.0",
+    "jest-enzyme": "^7.0.1",
+    "jest-serializer-enzyme": "^1.0.0",
+    "metro-react-native-babel-transformer": "^0.51.1",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.7.0",
+    "react-test-renderer": "^16.7.0"
+  },
+  "jest": {
+    "preset": "react-native",
+    "setupTestFrameworkScriptFile": "./tests/setup-tests.js",
+    "transform": {
+      "^.+\\.js$": "./tests/preprocessor.js"
+    }
+  }
+}
