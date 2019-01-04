@@ -1,15 +1,10 @@
 import React from "react";
 import { Button } from "react-native";
+import { Player } from "./audio-player";
 
 export class AudioButton extends React.PureComponent {
   handlePress = async () => {
-    const soundObject = new Expo.Audio.Sound();
-    try {
-      await soundObject.loadAsync(this.props.sound);
-      await soundObject.playAsync();
-    } catch (e) {
-      console.log(e);
-    }
+    await Player.play(this.props.sound);
     this.props.onPress && this.props.onPress(this.props.sound);
   };
 

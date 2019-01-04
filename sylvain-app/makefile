@@ -13,6 +13,9 @@ start-android: ## Start local dev android
 start-ios: ## Start local dev ios
 	npm run ios
 
+stryke: ## Run tests with stryker
+	npx stryker run
+
 test: ## Run tests
 	npm test --coverage
 
